@@ -9,8 +9,8 @@ import {
 
 function Header() {
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm py-2 px-5">
-      <div className="md:container grid grid-cols-3 mx-auto">
+    <nav className="sticky top-0 z-50 bg-white shadow-sm py-2">
+      <div className="md:container px-5 grid grid-cols-3 mx-auto">
         {/* Left Part */}
         <div className="relative h-12 cursor-pointer flex items-center justify-start">
           <Image
@@ -39,7 +39,7 @@ function Header() {
           </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }
 
