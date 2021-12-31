@@ -3,6 +3,7 @@ import Banner from "../components/Banner";
 import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
+import LargeCard from "../components/LargeCard";
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 
 export default function Home({ exploreData, cardsData }) {
@@ -20,7 +21,7 @@ export default function Home({ exploreData, cardsData }) {
       <Banner />
 
       {/* Main Section */}
-      <main className="md:container mx-auto px-5 py-8">
+      <main className="md:container mx-auto px-5">
         {/* Small Section */}
         <section>
           <h2 className="flex items-center space-x-4 font-bold text-xl md:2xl py-8 md:py-10">
@@ -40,7 +41,7 @@ export default function Home({ exploreData, cardsData }) {
         </section>
 
         {/* Medium Section */}
-        <section>
+        <section className="pb-10">
           <h2 className="flex items-center space-x-4 font-bold text-xl md:2xl py-8 md:py-10">
             <span>Live Anywhere </span>
             <ArrowNarrowRightIcon className="inline h-7" />
@@ -55,6 +56,14 @@ export default function Home({ exploreData, cardsData }) {
             ))}
           </div>
         </section>
+
+        {/* LargeCard */}
+        <LargeCard
+          img="/images/large-card.jpg"
+          title="The Greatest Outdoors"
+          description="Wishists curated by Airbnb."
+          btnText="Get Inspired"
+        />
       </main>
     </div>
   );
