@@ -34,8 +34,8 @@ function Header() {
           <GlobeIcon className="h-6 hidden md:inline" />
 
           <div className="flex border space-x-2 p-2 rounded-full ">
-              <MenuIcon className="h-6"/>
-              <UserCircleIcon className="h-6"/>
+            <MenuIcon className="h-6" />
+            <UserCircleIcon className="h-6" />
           </div>
         </div>
       </div>

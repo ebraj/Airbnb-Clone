@@ -1,8 +1,8 @@
 function Template() {
   return (
-    <header className="md:container mx-auto px-5 bg-gray-100">
+    <div className="md:container mx-auto px-5 py-5 md:py-10">
       <div></div>
-    </header>
+    </div>
   );
 }
 
