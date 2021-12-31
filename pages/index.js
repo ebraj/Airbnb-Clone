@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import SmallCard from "../components/SmallCard";
 import MediumCard from "../components/MediumCard";
 import LargeCard from "../components/LargeCard";
+import Footer from "../components/Footer";
 import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 
 export default function Home({ exploreData, cardsData }) {
@@ -65,6 +66,9 @@ export default function Home({ exploreData, cardsData }) {
           btnText="Get Inspired"
         />
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }
