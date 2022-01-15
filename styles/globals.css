@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .button {
+    @apply text-center px-4 py-1 border rounded-full cursor-pointer inline-block hover:shadow-sm active:scale-95;
+  }
+}

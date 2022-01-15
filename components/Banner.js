@@ -4,7 +4,7 @@ import { ArrowNarrowRightIcon } from "@heroicons/react/outline";
 function Banner() {
   return (
     <header className="relative min-h-[300px] sm:min-h-[400px] lg:min-h-[500px] xl:min-h-[600px] 2xl:min-h-[700px]">
-      <Image src="/images/banner.jpg" layout="fill" objectFit="cover" />
+      <Image src="/images/banner.jpeg" layout="fill" objectFit="cover" />
       <div className="absolute top-1/2 -translate-y-2/4 w-full text-center px-5">
         <h1 className="p-2 text-2xl sm:text-3xl md:text-4xl font-black text-white uppercase">
           Not sure where to go?
