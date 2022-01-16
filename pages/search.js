@@ -3,6 +3,7 @@ import { format } from "date-fns";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import InfoCard from "../components/InfoCard";
+import Map from "../components/Map";
 
 function Search({ searchResults }) {
   console.log(searchResults);
@@ -15,9 +16,9 @@ function Search({ searchResults }) {
   return (
     <div>
       <Header placeHolder={`${location} | ${range} | ${noOfGuests} `} />
-      <main className="md:container mx-auto px-5 py-5 md:py-10">
-        <div className="flex">
-          <section className="w-screen">
+      <main className="md:container mx-auto px-5">
+        <div className="flex space-x-5">
+          <section className="w-screen py-5 md:py-10">
             <p className="">
               300+ Stays - {range} - {noOfGuests} for guests
             </p>
@@ -46,6 +47,10 @@ function Search({ searchResults }) {
                 )
               )}
             </div>
+          </section>
+
+          <section className="hidden xl:inline-flex xl:min-w-[500px]">
+            <Map searchResults={searchResults} />
           </section>
         </div>
       </main>
